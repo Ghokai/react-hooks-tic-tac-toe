@@ -1,0 +1,40 @@
+.board {
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+}
+
+.square {
+  flex: 1 0 calc(33% - 10px);
+  margin: 5px;
+  background: whitesmoke;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.square-icon {
+  margin: auto;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.block {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a.button {
+  width: 500px;
+}
